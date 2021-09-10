@@ -1,5 +1,6 @@
 import { ADD_LOCATION_DATA } from '../actions/actionsConstants';
 
+
 const defaultState = [];
 
 const locationsDataReducer = (state = defaultState, action) => {
