@@ -1,0 +1,35 @@
+%loadingbar
+    width: $m-size
+    height: $l-size
+    background-color: $primary-text-color
+    margin-left: $m-size
+
+@keyframes bar-animation
+    0% 
+        height: $l-size
+        
+    100%
+        height: $xl-size
+
+.loadingbar-container
+    display: flex
+    flex-flow: row
+    justify-content: center
+    align-items: center
+    height: 100%
+    width: 100%
+    top: 0
+    position: absolute
+    background: $bg-dark
+
+.fisrt
+    @extend %loadingbar
+    animation: bar-animation 0.7s linear 0s infinite alternate
+
+.second
+    @extend %loadingbar
+    animation: bar-animation 0.7s linear 0.5s infinite alternate
+
+.third
+    @extend %loadingbar
+    animation: bar-animation 0.7s linear 1s infinite alternate

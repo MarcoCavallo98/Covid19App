@@ -1,0 +1,73 @@
+$scrollbar-height: 400px !important
+$scrollbar-width: 200px !important
+    
+.details-container
+    margin-top: $l-size
+
+.back-button
+    margin: 0 0 $l-size $m-size
+    
+.scroll-container
+    width: fit-content
+    position: absolute
+
+.scrollbar
+    height: $scrollbar-height
+    -webkit-transition: width 0.1s ease-in-out 
+    -moz-transition: width 0.1s ease-in-out 
+    -ms-transition: width 0.1s ease-in-out 
+    -o-transition: width 0.1s ease-in-out 
+    transition: width 0.1s ease-in-out 
+    background-color: $primary-text-color
+    color: $bg-dark
+    z-index: 3
+
+.scrollbar.active
+    width: $scrollbar-width
+
+
+.scroll-item
+    margin-bottom: $xl-size
+    padding-left: $s-size
+
+.side-bar
+    width: fit-content
+
+.chart-container
+    margin: 0 $m-size 0 $m-size
+    display: flex
+    flex-flow: column
+    align-items: center
+
+.chart
+    width: 90%
+    height: 200px
+    margin: $l-size 0 $l-size 0
+
+
+@media screen and (min-width: $desktop-breakpoint)
+    .details-container
+        margin: $l-size $l-size 0 $l-size
+
+    .back-button
+        margin: $m-size 0 $l-size 0
+
+    .scroll-container
+        position: relative
+
+    .scrollbar
+        height: $scrollbar-height
+        width: $scrollbar-width
+        background-color: $primary-text-color
+        color: $bg-dark
+
+    .scrollbar-and-chart-container
+        display: flex
+        margin-bottom: $xl-size
+
+    .chart-container
+        width: 100%
+        margin: 0 0 0 $xl-size
+
+    .chart
+        width: 100%

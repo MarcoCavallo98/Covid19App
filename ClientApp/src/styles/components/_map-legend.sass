@@ -1,0 +1,27 @@
+//Legend classes
+    
+%cases-boxcolor
+    width: $m-size
+    height: $m-size
+    margin-right: $xs-size
+    
+.low-cases
+    @extend %cases-boxcolor
+    background: $low-cases 
+
+.average-cases
+    @extend %cases-boxcolor
+    background: $average-cases 
+
+.high-cases
+    @extend %cases-boxcolor
+    background: $high-cases
+
+.no-data
+    @extend %cases-boxcolor
+    background: $no-data
+
+.legend-item
+    display: flex
+    align-items: center
+

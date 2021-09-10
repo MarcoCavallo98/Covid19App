@@ -1,0 +1,46 @@
+%bar
+    width: $m-size + 0.5rem
+    height: $xs-size - 0.4rem
+    background-color: $bg-dark
+    margin-top: $xs-size - 0.3rem
+    transition: all 1s
+
+.burger-container
+    display: flex
+    background: $primary-text-color
+    width: fit-content
+    height: auto
+    align-items: center
+    padding: $s-size
+
+.bar-container
+    display: flex
+    flex-flow: column
+
+.top-bar
+    @extend  %bar
+    margin-top: 0
+
+.middle-bar
+    @extend  %bar
+
+.bottom-bar
+    @extend  %bar
+
+.top-bar.active
+    @extend  %bar
+    margin-top: 0
+    transform: translateY(8px) rotate(45deg)
+
+.middle-bar.active
+    @extend  %bar
+    opacity: 0
+    
+
+.bottom-bar.active
+    @extend  %bar
+    transform: translateY(-8px) rotate(-45deg)
+
+@media screen and (min-width: $desktop-breakpoint)
+    .burger-container
+        display: none

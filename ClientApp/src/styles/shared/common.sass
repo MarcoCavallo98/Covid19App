@@ -1,0 +1,36 @@
+html
+    background-color: $bg-dark
+    color: $primary-text-color
+    font-family: Courier New, Courier, monospace
+    font-size: 62.5%
+
+body
+    font-size: $s-size + 0.1rem
+
+a
+    color: $primary-text-color
+    font-weight: bold
+
+a:hover
+    color: $secondary-text-color
+
+hr
+    color: $primary-text-color 
+
+button
+    background: $bg-dark
+    color: $primary-text-color
+    border: 2px solid $primary-text-color
+    border-radius: 5px
+    padding: $xs-size
+
+button:hover
+    background: $primary-text-color
+    color: $bg-dark
+
+.bold
+    font-weight: bold
+
+@media screen and (min-width: $desktop-breakpoint)
+    body
+        font-size: $m-size
